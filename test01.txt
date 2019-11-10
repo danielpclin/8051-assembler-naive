@@ -1,0 +1,4 @@
+	MOV	A,72H
+	SETB         C
+
+                   MOV        A,06H

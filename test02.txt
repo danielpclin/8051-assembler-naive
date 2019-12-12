@@ -1,0 +1,3 @@
+	SETB          C
+	MOV	A,94H
+	MOV         A,0ADH

@@ -1,0 +1,4 @@
+	MOV	A,82H
+                   SUBB        A,R3
+	ORL           A,#64H
+	MOV	R6,4BH

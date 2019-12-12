@@ -1,0 +1,18 @@
+ORG             0ABC0H
+	ORL    17H,A
+        MOV    5DH,#0C4H
+BAK:
+	SUBB    A,7BH
+        LCALL   SUB1
+TD:
+	DJNZ    R2,TD
+        MOV     R4,93H
+	LJMP    BAK
+
+SUB1:
+       SUBB   A,R6
+       DJNZ   R6,STILL
+       MOV    67H,R7
+STILL: CLR    36H
+       ORL    A,#0ECH
+       RET

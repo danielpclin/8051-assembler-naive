@@ -1,0 +1,8 @@
+ORG          1600H
+	SUBB	A,56H
+                   LCALL         PPKK
+	MOV        A,#9BH
+PPKK: 
+                   MOV        R5,8CH
+	ORL           34H,A
+                   RET

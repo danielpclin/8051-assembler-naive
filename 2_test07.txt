@@ -1,0 +1,15 @@
+ORG	4800H
+                   CLR            2CH
+DDD:
+	MOV	48H,#7H
+	CLR            56H
+	DJNZ	R3,EEE
+	XRL	A,R6
+                   LJMP        GGG
+EEE:
+                   MOV         27H,R6
+                   SUBB        A,R6
+GGG:
+	ORL           5AH,A
+                   SUBB        A,6BH
+	LJMP         EEE

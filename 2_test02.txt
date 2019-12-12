@@ -1,0 +1,8 @@
+ORG          4560H
+	MOV	A,#56H
+                   ORL          33H,A
+REPEAT:
+	SUBB        A,R5
+	SUBB	A,80H
+                   MOV        R5,8CH
+	LJMP        REPEAT

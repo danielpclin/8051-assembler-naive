@@ -1,0 +1,5 @@
+	ADD	A,96H
+                 SETB          C
+	ADD	 A,0ADH
+	SETB          C
+	ADD	A,0EH	
